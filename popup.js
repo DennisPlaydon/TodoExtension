@@ -11,4 +11,11 @@ $(function(){
 
 	var weekday = weekdays[newDate.getDay()]
     $('#greet').text(weekday + "'s List")
+
+    var mustdo = document.querySelector('.mustdo');
+    var guessField = document.querySelector('#name');
+
+    $('#addItem').click(function(){
+    	mustdo.textContent += guessField.value
+    });
 });
